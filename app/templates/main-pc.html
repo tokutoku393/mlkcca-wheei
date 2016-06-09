@@ -6,10 +6,10 @@
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src='https://cdn.mlkcca.com/v2.0.0/milkcocoa.js'></script>
-    <script src="{{baseUrl}}/public/assets/js/Confetti.js"></script>
-    <script src="{{baseUrl}}/public/assets/js/Paper.js"></script>
-    <script src="{{baseUrl}}/public/assets/js/stats.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{baseUrl}}/public/assets/css/main-pc.css">
+    <script src="{{baseUrl}}/assets/js/Confetti.js"></script>
+    <script src="{{baseUrl}}/assets/js/Paper.js"></script>
+    <script src="{{baseUrl}}/assets/js/stats.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{baseUrl}}/assets/css/main-pc.css">
   </head>
   <body>
     <canvas id="canvas" width="800" height="600" style="background-color:#FFFFFF"></canvas>
@@ -60,7 +60,7 @@
     var loader = new createjs.LoadQueue(false);
     loader.addEventListener("fileload", fileload);
     loader.addEventListener("complete", complete);
-    loader.loadFile({src: "assets/papers.png", id: "papers"});
+    loader.loadFile({src: "assets/images/papers.png", id: "papers"});
 
     createjs.Ticker.setFPS(30);
     createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
@@ -132,7 +132,7 @@
     publish.y = canvas.width;
     publish.alpha = 0.6;
 
-    var img = new createjs.Bitmap('boy.png');
+    var img = new createjs.Bitmap('');
     stage.addChild(img);
     img.x = canvas.width/4;
     img.y = 150;
