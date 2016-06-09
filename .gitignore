@@ -1,4 +1,5 @@
 vendor/
-logs/*
-compiled/*
+storage/logs/*
+storage/compiled/*
+storage/cache/*
 .env
