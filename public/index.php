@@ -19,8 +19,7 @@ $log = $app->log;
 $view->setTemplatesDirectory(getenv('BASE_DIR') . '/app/templates');
 $view->parserCompileDirectory = getenv('BASE_DIR') . '/storage/compiled';
 $view->parserCacheDirectory = getenv('BASE_DIR') . '/storage/cache';
-$view->parserExtensions = array(getenv('BASE_DIR') . '/vendor/slim/views/SmartyPl
-ugins');
+$view->parserExtensions = array(getenv('BASE_DIR') . '/vendor/slim/views/SmartyPlugins');
 $smarty = $view->getInstance();
 $smarty->assign('smarty', $smarty);
 $smarty->default_modifiers = array('escape:"html"');
