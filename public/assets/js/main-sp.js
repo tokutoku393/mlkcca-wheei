@@ -37,9 +37,3 @@ window.onload = function(){
     }
   }
 };
-
-$(document).ready(function() {
-  $(this).gShake(function(){
-      alert('hoge');
-  });
-});
