@@ -11,6 +11,6 @@ Milkcocoa + JavaScript
 
 ## routing
 
-'/' メイン画面を表示  
+`/` メイン画面を表示  
 
-'/controller' 携帯側画面を表示  
+`/controller` 携帯側画面を表示  
